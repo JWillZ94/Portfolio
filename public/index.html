@@ -5,31 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.scss">
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="background-color: #d9d9d9;">
     <header>
-      <div class="logo">
-        <img src="logo" width="300" height="300" alt="...and here is my logo...IfIHadOne!">
-      </div>
-      <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #b30000;">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Me</a>
-            </li>
-          </ul>
+      <div class="d-flex flex-row">
+        <div class="col d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg navbar-dark sticky-top " style="background-color: #b30000;">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto h4">
+                <li class="nav-item active px-4">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="contact.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
       <div class="row my-4">
         <div class="col">
           <h1 class="display-1 text-center">Jerel</h1>
@@ -38,9 +40,10 @@
       </div>
     </header>
     <article>
-      <div class="row my-4">
-        <div class="col-6 border border-dark">
+      <div class="row m-4 d-flex justify-content-around">
+        <div class="col-5 border border-dark m-4 rounded" style="background-color: #b30000;">
           <div class="text-center">
+            <div class="glyphicon glyphicon-calendar"></div>
             <h3>Skills</h3>
           </div>
           <ul>
@@ -50,19 +53,19 @@
             <li>Bootstrap (Hint: What I made this portfolio with...)</li>
           </ul>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-5 border border-dark m-4 rounded">
           <div class="text-center">
             <h3>Projects</h3>
           </div>
           <ul>
-            <li>First project</li>
-            <li>Second project</li>
-            <li>Third project</li>
+            <li>(First project)</li>
+            <li>(Second project)</li>
+            <li>(Third project)</li>
           </ul>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-6 border border-dark">
+      <div class="row m-4 d-flex justify-content-around">
+        <div class="col-5 border border-dark m-4 rounded">
           <div class="text-center">
             <h3>Languages</h3>
           </div>
@@ -71,13 +74,13 @@
             <li>Secondary: Python</li>
           </ul>
         </div>
-        <div class="col-6 border border-dark">
+        <div class="col-5 border border-dark m-4 rounded" style="background-color: #b30000;">
           <div class="text-center">
             <h3>Contributions</h3>
           </div>
           <ul>
-            <li>First Contribution</li>
-            <li>Second Contribution</li>
+            <li>(First Contribution)</li>
+            <li>(Second Contribution)</li>
           </ul>
         </div>
       </div>
