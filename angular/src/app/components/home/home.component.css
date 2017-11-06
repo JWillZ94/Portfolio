@@ -1,0 +1,35 @@
+#skills {
+  background: linear-gradient(to top, #fff, #bfbfbf);
+  color: #262626;
+}
+
+#skills li {
+  background-color: #262626;
+}
+
+#languages {
+  background-color: #262626;
+  color: #fff;
+}
+
+#languages li {
+  color: #595959
+}
+
+#projects {
+  background-color: #fff;
+  color: #595959;
+}
+
+#projects li {
+  background-color: #595959;
+}
+
+#contributions {
+  background-color: #b30000;
+  color: white;
+}
+
+#contributions li {
+  color: #595959
+}
