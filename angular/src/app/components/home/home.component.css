@@ -4,7 +4,7 @@
 }
 
 #skills li {
-  background-color: #262626;
+  background: linear-gradient(to top right, #262626, #404040);
 }
 
 #languages {
@@ -13,7 +13,8 @@
 }
 
 #languages li {
-  color: #595959
+  color: #595959;
+  background: linear-gradient(to bottom right, #fff, #d9d9d9);
 }
 
 #projects {
@@ -22,7 +23,7 @@
 }
 
 #projects li {
-  background-color: #595959;
+  background: linear-gradient(to bottom left, #595959, #404040);
 }
 
 #contributions {
@@ -31,5 +32,6 @@
 }
 
 #contributions li {
-  color: #595959
+  color: #595959;
+  background: linear-gradient(to top left, #fff, #d9d9d9);
 }
