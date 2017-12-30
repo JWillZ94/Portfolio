@@ -21,8 +21,9 @@
     "url": "https://github.com/JWillZ94/Portfolio/issues"
   },
   "homepage": "https://github.com/JWillZ94/Portfolio#readme",
-  "dependencies":{
-    "express":"*",
-    "body-parser":"*"
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.7",
+    "express": "*"
   }
 }

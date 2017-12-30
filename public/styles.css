@@ -1,3 +1,40 @@
+body {
+  background: linear-gradient(to right, #fff, #bfbfbf);
+}
+
+#home {
+  color: #262626;
+  text-align: center;
+}
+
+#about {
+  color: #262626;
+  text-align: center;
+}
+
+#contact {
+  color: #262626;
+  text-align: center;
+}
+
+#title {
+  background: linear-gradient(to right, #b30000, #bfbfbf);
+}
+
+h1 {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+}
+
+.active {
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #bfbfbf;
+}
+
 #skills {
   background: linear-gradient(to top, #fff, #bfbfbf);
   color: #262626;
@@ -34,4 +71,10 @@
 #contributions li {
   color: #595959;
   background: linear-gradient(to top left, #fff, #d9d9d9);
+}
+
+p {
+  line-height: 2em;
+  font-size: 1.5em;
+  color: #595959;
 }
