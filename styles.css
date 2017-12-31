@@ -1,38 +1,29 @@
 body {
   background: linear-gradient(to right, #fff, #bfbfbf);
+  position: relative;
 }
 
-#home {
-  color: #262626;
+.nav-link {
   text-align: center;
+  background: #fff;
 }
 
-#about {
-  color: #262626;
-  text-align: center;
+.nav-link:hover {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-#contact {
-  color: #262626;
-  text-align: center;
+.active {
+  text-decoration: underline;
 }
 
 #title {
   background: linear-gradient(to right, #b30000, #bfbfbf);
 }
 
-h1 {
+.home-text {
   color: #fff;
-}
-
-h3 {
-  color: #fff;
-}
-
-.active {
-  font-size: 1.3em;
-  font-weight: bold;
-  background-color: #bfbfbf;
+  text-shadow: 2px 2px #262626;
 }
 
 #skills {
@@ -55,26 +46,70 @@ h3 {
 }
 
 #projects {
+  background-color: #b30000;
+  color: #fff;
+}
+
+#projects li {
+  color: #b30000;
+  background: linear-gradient(to top left, #fff, #d9d9d9);
+}
+
+#contributions {
   background-color: #fff;
   color: #595959;
 }
 
-#projects li {
+#contributions li {
   background: linear-gradient(to bottom left, #595959, #404040);
 }
 
-#contributions {
-  background-color: #b30000;
-  color: white;
-}
-
-#contributions li {
-  color: #595959;
-  background: linear-gradient(to top left, #fff, #d9d9d9);
-}
-
-p {
-  line-height: 2em;
+#p-skills {
+  line-height: 1.7em;
   font-size: 1.5em;
   color: #595959;
+}
+
+#p-languages {
+  line-height: 1.7em;
+  font-size: 1.5em;
+}
+
+#p-projects {
+  line-height: 1.7em;
+  font-size: 1.5em;
+}
+
+#t-about {
+  color: #595959;
+}
+
+#p-about {
+  line-height: 1.7em;
+  font-size: 1.3em;
+  color: #595959;
+}
+
+#t-contact {
+  color: #595959;
+}
+
+.contact {
+  line-height: 1.7em;
+  font-size: 1.5em;
+  color: #595959;
+  padding-top: 1em;
+}
+
+.modal-header {
+  background: #b30000;
+  color: #fff;
+}
+
+.modal-body {
+  background: #d9d9d9;
+}
+
+.modal-footer {
+  background: #262626;
 }
