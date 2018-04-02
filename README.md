@@ -1,4 +1,7 @@
 # Portfolio
 
-My first portfolio site, check it out!
-I'm early in the learning stages of a developer so this will be a modest site for a while, however it will improve as my skills grow! I aim to become a MEAN stack developer so I have a long road ahead, going to stay motivated and put in work!
+My portfolio site, check it out!
+
+I made this site with HTML, CSS, Bootstrap, and JavaScript. It is included with a beautiful color scheme, its responsive, and includes the scrollspy feature for quick navigation. I am eager to start my front-end web development career and I am passionate about learning more.
+
+Visit my website and contact me if you're interested in hiring me for your company: http://www.jerelwilliams.com/
