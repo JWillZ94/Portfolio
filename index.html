@@ -56,20 +56,20 @@
       </div>
       <div class="row p-5 d-flex justify-content-around" id="skills">
         <div class="col-xl-5 p-3">
-          <div class="text-center">
-            <img src="assets/star.svg" alt="icon here">
-            <h3>Skills</h3>
+          <div class="skill-section-title text-center">
+            <img id="skill-icon" class="section-icon" src="assets/star.svg" alt="icon here">
+            <h3 id="skill-title" class="section-title">Skills</h3>
           </div>
           <ul class="list-group">
-            <li class="list-group-item text-white">React.js</li>
-            <li class="list-group-item text-white">MEAN/MERN Stack (MongoDB, Express.js, Angular/React, Node.js)</li>
-            <li class="list-group-item text-white">Mobile First, Responsive Web Design</li>
-            <li class="list-group-item text-white">Bootstrap</li>
-            <li class="list-group-item text-white">jQuery</li>
+            <li id="skill-1" class="list-group-item text-white">React.js</li>
+            <li id="skill-2" class="list-group-item text-white">MEAN/MERN Stack (MongoDB, Express.js, Angular/React, Node.js)</li>
+            <li id="skill-3" class="list-group-item text-white">Mobile First, Responsive Web Design</li>
+            <li id="skill-4" class="list-group-item text-white">Bootstrap</li>
+            <li id="skill-5" class="list-group-item text-white">jQuery</li>
           </ul>
         </div>
         <div class="col-xl-5 p-3 align-self-center">
-          <p id="p-skills" class="text-center">As a full-stack developer, I specialize in front-end web developing, as well as back-end web developing. Since I am a JavaScript developer, I stick to the JavaScript-specific MEAN Stack for my full-stack web applications. My web apps are responsive and conform to any screen size, I use bootstrap to help build the design of my web apps, and I also use jQuery mainly for functionality and animations.</p>
+          <p id="p-skills" class="text-center">As a full-stack developer, I specialize in front-end web developing, as well as back-end web developing. My web apps are responsive and conform to any screen size, I use bootstrap to help build the design of my web apps, and I also use jQuery mainly for functionality and animations.</p>
         </div>
       </div>
       <div class="row p-5 d-flex justify-content-around" id="languages">
@@ -78,26 +78,26 @@
         </div>
         <div class="col-xl-5 p-3">
           <div class="text-center">
-            <img src="assets/keyboard.svg" alt="icon here">
-            <h3>Languages</h3>
+            <img class="section-icon" src="assets/keyboard.svg" alt="icon here">
+            <h3 class="section-title">Languages</h3>
           </div>
           <ul class="list-group">
-            <li class="list-group-item">Primary: JavaScript</li>
-            <li class="list-group-item">Secondary: Python</li>
+            <li id="lang-1" class="list-group-item">Primary: JavaScript</li>
+            <li id="lang-2" class="list-group-item">Secondary: Python</li>
           </ul>
         </div>
       </div>
       <div class="row p-5 d-flex justify-content-around" id="projects">
         <div class="col-xl-5 p-3">
           <div class="text-center">
-            <img src="assets/globe.svg" alt="icon here">
-            <h3>Projects</h3>
+            <img class="section-icon" src="assets/globe.svg" alt="icon here">
+            <h3 class="section-title">Projects</h3>
           </div>
           <ul class="list-group">
-            <li class="list-group-item">
+            <li id="proj-1" class="list-group-item">
               <a href="https://jwillz94.github.io/Tranquility-Lane/#/">Tranquility Lane</a>
             </li>
-            <li class="list-group-item">
+            <li id="proj-2" class="list-group-item">
               <a href="https://yoyokingdom.herokuapp.com/">Yo-Yo Kingdom</a>
             </li>
           </ul>
@@ -122,39 +122,43 @@
       </div>-->
       <div class="row d-flex justify-content-around py-5" id="contact">
         <div class="col-xl-5 pb-5 text-center container">
-          <img src="assets/smiley.svg" alt="icon here">
-          <h2 id="t-about" class="py-3">About Me</h2>
+          <div class="">
+            <img  class="section-icon" src="assets/smiley.svg" alt="icon here">
+            <h2 id="t-about" class="py-3 section-title">About Me</h2>
+          </div>
           <img class="rounded mb-4" src="assets/graduation.png" alt="pic here" width="150">
           <p id="p-about">Hello! My name is Jerel Williams, I am from Long Island, NY, and I am a web developer. I became interested in coding in April 2017 after my friend, who is a senior software engineer, showed me what it is about after I asked out of curiosity. I decided to try it out and went through a tutorial on Codecademy and instantly fell in love with coding. The fact that I can create almost anything I want and solve problems through coding is what got me hooked. I'd love to help create the next big app that hits the market and to collaborate with a good team in order to meet that goal. I did not go to college for computer science or anything related to technology (I graduated as an undergrad under an Exercise Science major), but I am currently self-teaching the skills that I need to master and I am eager to improve.</p>
         </div>
         <div class="col-xl-5 text-center">
-          <img src="assets/comment-discussion.svg" alt="icon here">
-          <h2 id="t-contact" class="py-3">Contact Me!</h2>
+          <div class="">
+            <img class="section-icon" src="assets/comment-discussion.svg" alt="icon here">
+            <h2 id="t-contact" class="py-3 section-title">Contact Me!</h2>
+          </div>
           <p class="contact">
             Email me
             <img src="assets/arrow-right.svg" alt="icon here" class="px-1">
-            jerelwilliams94@aol.com
+            <span class="contact-link">jerelwilliams94@aol.com</span>
             <!--<img src="assets/aol-icon.ico" alt="aol icon" width="80px" id="email" data-toggle="modal" data-target="#emailModal">-->
           </p>
           <p class="contact">
             Check out my GitHub
             <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://github.com/JWillZ94" target="_blank">
-              <img src="assets/github-icon.svg" alt="github icon here" width="80px">
+              <img class="contact-link" src="assets/github-icon.svg" alt="github icon here" width="80px">
             </a>
           </p>
           <p class="contact">
             Lets connect on LinkedIn
             <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://www.linkedin.com/in/jerel-williams-a84041156/" target="_blank">
-              <img src="assets/linked-in-icon.png" alt="linked-in icon here" width="80px">
+              <img class="contact-link" src="assets/linked-in-icon.png" alt="linked-in icon here" width="80px">
             </a>
           </p>
           <p class="contact">
             Lets be friends on Facebook
             <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://www.facebook.com/jerel.williams.18" target="_blank">
-              <img src="assets/facebook-icon.ico" alt="facebook icon here" width="80px">
+              <img class="contact-link" src="assets/facebook-icon.ico" alt="facebook icon here" width="80px">
             </a>
           </p>
         </div>

@@ -50,4 +50,41 @@ $("document").ready(function() {
     }
 
   });
+
+  $('.skill-section-title')
+    .on('click', function (event) {
+      $('#p-skills').html('As a full-stack developer, I specialize in front-end web developing, as well as back-end web developing. My web apps are responsive and conform to any screen size, I use bootstrap to help build the design of my web apps, and I also use jQuery mainly for functionality and animations.');
+    })
+    .hover(
+      function () {
+        $('#skill-icon').addClass('spin-class');
+        $('#skill-title').addClass('jump-out');
+        $('#skill-title').removeClass('jump-in');
+      }, function () {
+        $('#skill-icon').removeClass('spin-class');
+        $('#skill-title').removeClass('jump-out');
+        $('#skill-title').addClass('jump-in');
+      }
+    );
+
+  $('#skill-1').on('click', function (event) {
+    $('#p-skills').html('yeah haha');
+  });
+
+  $('#skill-2').on('click', function (event) {
+    $('#p-skills').html('yeah haha 2');
+  });
+
+  $('#skill-3').on('click', function (event) {
+    $('#p-skills').html('yeah haha 3');
+  });
+
+  $('#skill-4').on('click', function (event) {
+    $('#p-skills').html('yeah haha 4');
+  });
+
+  $('#skill-5').on('click', function (event) {
+    $('#p-skills').html('yeah haha 5');
+  });
+
 });
