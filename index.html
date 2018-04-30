@@ -88,22 +88,28 @@
         </div>
       </div>
       <div class="row p-5 d-flex justify-content-around" id="projects">
-        <div class="col-xl-5 p-3">
+        <div class="p-3">
           <div class="text-center">
             <img class="section-icon" src="assets/globe.svg" alt="icon here">
-            <h3 class="section-title">Projects</h3>
+            <h3 class="section-title pb-4">Projects</h3>
+            <p id="p-projects" class="text-white">I've made these projects to simply work on my front-end and back-end web development skills. They are all written in JavaScript and I plan to make many more as I improve my skills. Feel free to visit them.</p>
           </div>
-          <ul class="list-group">
-            <li id="proj-1" class="list-group-item">
-              <a href="https://jwillz94.github.io/Tranquility-Lane/#/">Tranquility Lane</a>
-            </li>
-            <li id="proj-2" class="list-group-item">
-              <a href="https://yoyokingdom.herokuapp.com/">Yo-Yo Kingdom</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-xl-5 p-3 align-self-center">
-          <p id="p-projects" class="text-white">I've made these projects to simply work on my front-end and back-end web development skills. They are all written in JavaScript and I plan to make many more as I improve my skills. Feel free to visit them.</p>
+          <div class="row py-5 d-flex justify-content-around align-items-center">
+            <div>
+              <a class="col-xl-5" href="https://jwillz94.github.io/Tranquility-Lane/#/" target="_blank">
+                <img class="proj-pic proj-pic-left" id="tranquility-lane-pic" src="./assets/tranquility-lane-pic.png" width="500">
+              </a>
+            </div>
+            <p class="proj-p col-xl-5 text-center">This is a website I made to showcase the track and field facilities that I've been to over the years of my journey as a track and field athlete. I made this website with React.js as the front-end framework, this website is also responsive to any screen size and contains a clever animation that imitates a sprint start in track and field. The purpose of this website was to show my passion for track and field and to improve my front-end design and React.js skills.</p>
+          </div>
+          <div class="row py-5 d-flex justify-content-around align-items-center">
+            <p class="proj-p col-xl-5 text-center">A yo-yo showcase site that I made to polish up my skills for the MEAN stack. Combined Angular 5 front-end with a Node server, Express back-end, and MongoDB for my database. Made a REST API that displayed, added, updated, and deleted yo-yos from my Angular interface to my database. Also used Bootstrap, responsiveness, and various animations for the design.</p>
+            <div>
+              <a class="col-xl-5" href="https://yoyokingdom.herokuapp.com/" target="_blank">
+                <img class="proj-pic proj-pic-right" id="yoyo-kingdom-pic" src="./assets/yoyo-kingdom-pic.png" height="500">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <!---<div class="row p-5 d-flex justify-content-around" id="contributions">

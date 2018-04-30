@@ -3,6 +3,8 @@ body {
   position: relative;
 }
 
+/* Navbar ==================================== */
+
 .nav-link {
   text-align: center;
   background: #fff;
@@ -17,6 +19,8 @@ body {
   text-decoration: underline;
 }
 
+/* Title ==================================== */
+
 #title {
   background: linear-gradient(to right, #b30000, #bfbfbf);
   margin-top: 10rem !important;
@@ -26,6 +30,16 @@ body {
   color: #fff;
   text-shadow: 2px 2px #262626;
 }
+
+.section-icon {
+  cursor: pointer;
+}
+
+.section-title {
+  cursor: pointer;
+}
+
+/* Skills ==================================== */
 
 .list-group-item {
   cursor: pointer;
@@ -55,6 +69,14 @@ body {
   background: linear-gradient(to top right, #262626, #404040);
 }
 
+#p-skills {
+  line-height: 1.7em;
+  font-size: 1.5em;
+  color: #595959;
+}
+
+/* Languages ==================================== */
+
 #languages {
   background-color: #262626;
   color: #fff;
@@ -65,13 +87,16 @@ body {
   background: linear-gradient(to bottom right, #fff, #d9d9d9);
 }
 
+#p-languages {
+  line-height: 1.7em;
+  font-size: 1.5em;
+}
+
+/* Projects ==================================== */
+
 #projects {
   background-color: #b30000;
   color: #fff;
-}
-
-#projects li {
-  background: linear-gradient(to top left, #fff, #d9d9d9);
 }
 
 #projects a {
@@ -79,9 +104,98 @@ body {
   text-decoration: none;
 }
 
-#projects a:hover {
-  color: #262626;
+.proj-p {
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
+
+#p-projects {
+  line-height: 1.7em;
+  font-size: 1.5em;
+}
+
+.proj-pic {
+  margin: auto;
+  border-radius: 15px;
+}
+
+.proj-pic-left {
+  box-shadow: 20px 20px 10px black;
+}
+
+.left-lower {
+  animation-name: drop-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.left-raise {
+  animation-name: raise-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.proj-pic-right {
+  box-shadow: -20px 20px 10px black;
+}
+
+.right-lower {
+  animation-name: drop-right;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.right-raise {
+  animation-name: raise-right;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drop-left {
+  from {
+    transform: rotateZ(0deg);
+    box-shadow: 20px 20px 10px black;
+  }
+  to {
+    transform: rotateZ(10deg);
+    box-shadow: 0 0 0;
+  }
+}
+
+@keyframes raise-left {
+  from {
+    transform: rotateZ(10deg);
+    box-shadow: 0 0 0;
+  }
+  to {
+    transform: rotateZ(0deg);
+    box-shadow: 20px 20px 10px black;
+  }
+}
+
+@keyframes drop-right {
+  from {
+    transform: rotateZ(0deg);
+    box-shadow: -20px 20px 10px black;
+  }
+  to {
+    transform: rotateZ(-10deg);
+    box-shadow: 0px 0px 0px;
+  }
+}
+
+@keyframes raise-right {
+  from {
+    transform: rotateZ(-10deg);
+    box-shadow: 0px 0px 0px;
+  }
+  to {
+    transform: rotateZ(0deg);
+    box-shadow: -20px 20px 10px black;
+  }
+}
+
+/* Contributions ==================================== */
 
 #contributions {
   background-color: #fff;
@@ -92,21 +206,7 @@ body {
   background: linear-gradient(to bottom left, #595959, #404040);
 }
 
-#p-skills {
-  line-height: 1.7em;
-  font-size: 1.5em;
-  color: #595959;
-}
-
-#p-languages {
-  line-height: 1.7em;
-  font-size: 1.5em;
-}
-
-#p-projects {
-  line-height: 1.7em;
-  font-size: 1.5em;
-}
+/* Contact ==================================== */
 
 #t-about {
   color: #595959;
@@ -135,13 +235,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-.section-icon {
-  cursor: pointer;
-}
-
-.section-title {
-  cursor: pointer;
-}
+/* Animations ==================================== */
 
 @keyframes spin {
   from {
@@ -160,10 +254,13 @@ body {
 }
 
 @keyframes jump-out {
-  from {
+  0% {
+    transform: scale(1);
+  }
+  50% {
     transform: scale(1.3);
   }
-  to {
+  100% {
     transform: scale(1.1);
   }
 }
@@ -190,6 +287,8 @@ body {
   animation-name: jump-in;
   animation-duration: 0.5s;
 }
+
+/* Email Modal ==================================== */
 
 .modal-header {
   background: #b30000;

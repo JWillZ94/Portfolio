@@ -87,4 +87,24 @@ $("document").ready(function() {
     $('#p-skills').html('yeah haha 5');
   });
 
+  $('.proj-pic-left').hover(
+    function() {
+      $('.proj-pic-left').addClass('left-lower');
+      $('.proj-pic-left').removeClass('left-raise');
+    }, function() {
+      $('.proj-pic-left').removeClass('left-lower');
+      $('.proj-pic-left').addClass('left-raise');
+    }
+  );
+
+  $('.proj-pic-right').hover(
+    function() {
+      $('.proj-pic-right').addClass('right-lower');
+      $('.proj-pic-right').removeClass('right-raise');
+    }, function() {
+      $('.proj-pic-right').removeClass('right-lower');
+      $('.proj-pic-right').addClass('right-raise');
+    }
+  );
+
 });
