@@ -120,7 +120,7 @@ body {
 }
 
 .proj-pic-left {
-  box-shadow: 20px 20px 10px black;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 .left-lower {
@@ -136,7 +136,7 @@ body {
 }
 
 .proj-pic-right {
-  box-shadow: -20px 20px 10px black;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 .right-lower {
@@ -154,7 +154,7 @@ body {
 @keyframes drop-left {
   from {
     transform: rotateZ(0deg);
-    box-shadow: 20px 20px 10px black;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
   }
   to {
     transform: rotateZ(10deg);
@@ -169,14 +169,14 @@ body {
   }
   to {
     transform: rotateZ(0deg);
-    box-shadow: 20px 20px 10px black;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
 @keyframes drop-right {
   from {
     transform: rotateZ(0deg);
-    box-shadow: -20px 20px 10px black;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.3);
   }
   to {
     transform: rotateZ(-10deg);
@@ -191,8 +191,132 @@ body {
   }
   to {
     transform: rotateZ(0deg);
-    box-shadow: -20px 20px 10px black;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.3);
   }
+}
+
+.t-lane-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.t-lane-tooltip .t-lane-tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 10px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: -55%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.t-lane-tooltip .t-lane-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -85%;
+  left: 50%;
+  margin-left: -15px;
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+}
+
+.t-lane-tooltip:hover .t-lane-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.yoyo-king-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.yoyo-king-tooltip .yoyo-king-tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 10px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 2%;
+  right: 160%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 110%;
+  margin-left: -15px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+.yoyo-king-tooltip:hover .yoyo-king-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.coming-soon-left {
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  font-size: 4em;
+}
+
+.coming-soon-left-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.coming-soon-left-tooltip .coming-soon-left-tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 10px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 320%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  right: 103%;
+  margin-left: -15px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+.coming-soon-left-tooltip:hover .coming-soon-left-tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Contributions ==================================== */
