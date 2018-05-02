@@ -1,5 +1,5 @@
 // JavaScript ====================================
-/*let email = document.getElementById('email');
+let email = document.getElementById('email');
 
 email.addEventListener('mouseover', pointer);
 
@@ -20,7 +20,7 @@ function pointer() {
       form.classList.add('was-validated');
     }, false);
   }, false);
-})();*/
+})();
 
 // jQuery ========================================
 $("document").ready(function() {
@@ -86,6 +86,54 @@ $("document").ready(function() {
   $('#skill-5').on('click', function (event) {
     $('#p-skills').html('yeah haha 5');
   });
+
+  $('.lang-section-title').hover(
+    function () {
+      $('#lang-icon').addClass('shake-class');
+      $('#lang-title').addClass('jump-out');
+      $('#lang-title').removeClass('jump-in');
+    }, function () {
+      $('#lang-icon').removeClass('shake-class');
+      $('#lang-title').removeClass('jump-out');
+      $('#lang-title').addClass('jump-in');
+    }
+  );
+
+  $('.proj-section-title').hover(
+    function () {
+      $('#proj-icon').addClass('rotate-class');
+      $('#proj-title').addClass('jump-out');
+      $('#proj-title').removeClass('jump-in');
+    }, function () {
+      $('#proj-icon').removeClass('rotate-class');
+      $('#proj-title').removeClass('jump-out');
+      $('#proj-title').addClass('jump-in');
+    }
+  );
+
+  $('.about-section-title').hover(
+    function () {
+      $('#about-icon').addClass('roll-class');
+      $('#about-title').addClass('jump-out');
+      $('#about-title').removeClass('jump-in');
+    }, function () {
+      $('#about-icon').removeClass('roll-class');
+      $('#about-title').removeClass('jump-out');
+      $('#about-title').addClass('jump-in');
+    }
+  );
+
+  $('.contact-section-title').hover(
+    function () {
+      $('#contact-icon').addClass('shake-class');
+      $('#contact-title').addClass('jump-out');
+      $('#contact-title').removeClass('jump-in');
+    }, function () {
+      $('#contact-icon').removeClass('shake-class');
+      $('#contact-title').removeClass('jump-out');
+      $('#contact-title').addClass('jump-in');
+    }
+  );
 
   $('.proj-pic-left').hover(
     function() {
