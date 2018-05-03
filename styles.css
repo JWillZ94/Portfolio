@@ -10,9 +10,36 @@ body {
   background: #fff;
 }
 
-.nav-link:hover {
-  font-size: 1.3em;
-  font-weight: bold;
+@keyframes nav-enter {
+  from {
+    font-size: 1em;
+  }
+  to {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+}
+
+@keyframes nav-leave {
+  from {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  to {
+    font-size: 1em;
+  }
+}
+
+.link-enter {
+  animation-name: nav-enter;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.link-leave {
+  animation-name: nav-leave;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .active {
@@ -26,24 +53,30 @@ body {
   margin-top: 10rem !important;
 }
 
-.home-text {
+.home-text-title {
   color: #fff;
   text-shadow: 2px 2px #262626;
 }
 
-.section-icon {
-  cursor: pointer;
-}
-
-.section-title {
-  cursor: pointer;
+.home-text {
+  color: #fff;
+  text-shadow: 2px 2px #262626;
+  margin-bottom: 1.2rem;
 }
 
 /* Skills ==================================== */
 
-.list-group-item {
+/* .skill-section-icon {
   cursor: pointer;
 }
+
+.skill-section-title {
+  cursor: pointer;
+}
+
+.skill-item {
+  cursor: pointer;
+} */
 
 .list-group-item:hover {
   animation-name: hover-scale;
@@ -86,8 +119,8 @@ body {
 
 .spin-class {
   animation-name: spin;
+  animation-timing-function: linear;
   animation-duration: 100s;
-  animation-fill-mode: forwards;
 }
 
 /* Languages ==================================== */
@@ -105,6 +138,7 @@ body {
 #p-languages {
   line-height: 1.7em;
   font-size: 1.5em;
+  margin: 0;
 }
 
 @keyframes shake {
@@ -135,6 +169,10 @@ body {
 #projects a {
   color: #b30000;
   text-decoration: none;
+}
+
+.proj-section-title {
+  padding-top: 48px;
 }
 
 .proj-p {
@@ -423,7 +461,7 @@ body {
 
 .contact-link:hover {
   animation-name: hover-scale;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 

@@ -50,22 +50,22 @@
     <div>
       <div class="row py-4 title" id="title">
         <div class="col">
-          <h1 class="display-1 text-center home-text">Jerel</h1>
+          <h1 class="display-1 text-center home-text-title">Jerel</h1>
           <h3 class="text-center home-text">Where creativity and expertise come together</h3>
         </div>
       </div>
       <div class="row p-5 d-flex justify-content-around" id="skills">
         <div class="col-xl-5 p-3">
           <div class="skill-section-title text-center">
-            <img id="skill-icon" class="section-icon spin-class" src="assets/star.svg" alt="icon here">
-            <h3 id="skill-title" class="section-title">Skills</h3>
+            <img id="skill-icon" class="skill-section-icon spin-class" src="assets/star.svg" alt="icon here">
+            <h3 id="skill-title" class="skill-section-title">Skills</h3>
           </div>
           <ul class="list-group">
-            <li id="skill-1" class="list-group-item text-white">React.js</li>
-            <li id="skill-2" class="list-group-item text-white">MEAN/MERN Stack (MongoDB, Express.js, Angular/React, Node.js)</li>
-            <li id="skill-3" class="list-group-item text-white">Mobile First, Responsive Web Design</li>
-            <li id="skill-4" class="list-group-item text-white">Bootstrap</li>
-            <li id="skill-5" class="list-group-item text-white">jQuery</li>
+            <li id="skill-1" class="list-group-item text-white skill-item">React.js</li>
+            <li id="skill-2" class="list-group-item text-white skill-item">MEAN/MERN Stack (MongoDB, Express.js, Angular/React, Node.js)</li>
+            <li id="skill-3" class="list-group-item text-white skill-item">Mobile First, Responsive Web Design</li>
+            <li id="skill-4" class="list-group-item text-white skill-item">Bootstrap</li>
+            <li id="skill-5" class="list-group-item text-white skill-item">jQuery</li>
           </ul>
         </div>
         <div class="col-xl-5 p-3 align-self-center">
@@ -151,13 +151,13 @@
         </div>
       </div>-->
       <div class="row d-flex justify-content-around py-5" id="contact">
-        <div class="col-xl-5 pb-5 text-center">
+        <div class="col-xl-5 text-center">
           <div class="about-section-title">
             <img id="about-icon" class="section-icon" src="assets/smiley.svg" alt="icon here">
             <h2 id="about-title" class="py-3 section-title">About Me</h2>
           </div>
           <img class="rounded mb-4" src="assets/graduation.png" alt="pic here" width="150">
-          <p id="p-about">Hello! My name is Jerel Williams, I am from Long Island, NY, and I am a web developer. I became interested in coding in April 2017 after my friend, who is a senior software engineer, showed me what it is about after I asked out of curiosity. I decided to try it out and went through a tutorial on Codecademy and instantly fell in love with coding. The fact that I can create almost anything I want and solve problems through coding is what got me hooked. I'd love to help create the next big app that hits the market and to collaborate with a good team in order to meet that goal. I did not go to college for computer science or anything related to technology (I graduated as an undergrad under an Exercise Science major), but I am currently self-teaching the skills that I need to master and I am eager to improve.</p>
+          <p id="p-about" class="m-0">Hello! My name is Jerel Williams, I am from Long Island, NY, and I am a web developer. I became interested in coding in April 2017 after my friend, who is a senior software engineer, showed me what it is about after I asked out of curiosity. I decided to try it out and went through a tutorial on Codecademy and instantly fell in love with coding. The fact that I can create almost anything I want and solve problems through coding is what got me hooked. I'd love to help create the next big app that hits the market and to collaborate with a good team in order to meet that goal. I did not go to college for computer science or anything related to technology (I graduated as an undergrad under an Exercise Science major), but I am currently self-teaching the skills that I need to master and I am eager to improve.</p>
         </div>
         <div class="col-xl-5 text-center">
           <div class="contact-section-title">
@@ -203,32 +203,32 @@
               <span class="text-white" aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form id="needs-validation" name="emailform" action="emailform.php" method="post" enctype="text/plain">
+          <form id="needs-validation" name="emailform" action="email-form.php" method="post" enctype="text/plain">
             <div class="modal-body">
+              <!-- <div class="form-group">
+                <label for="to-email">To: </label>
+                <input type="email" class="form-control" name="to-email" placeholder="jerelwilliams94@aol.com" disabled>
+              </div> -->
               <div class="form-group">
-                <label>To: </label>
-                <input type="email" class="form-control" name="to-email" placeholder="jerelwilliams94@gmail.com" disabled>
-              </div>
-              <div class="form-group">
-                <label>Name: </label>
+                <label for="name">Name: </label>
                 <input type="text" class="form-control" name="name" placeholder="Name..." required>
                 <div class="invalid-feedback">
                   Please enter your name.
                 </div>
               </div>
               <div class="form-group">
-                <label>From: </label>
+                <label for="from-email">From: </label>
                 <input type="email" class="form-control" name="from-email" placeholder="Type email here..." required>
                 <div class="invalid-feedback">
                   Please enter a valid email address.
                 </div>
               </div>
               <div class="form-group">
-                <label>Subject: </label>
+                <label for="subject">Subject: </label>
                 <input type="text" class="form-control" name="subject" placeholder="Subject...">
               </div>
               <div class="form-group">
-                <label>Message: </label>
+                <label for="message">Message: </label>
                 <textarea cols="30" rows="10" class="form-control" name="message" placeholder="Message..." required></textarea>
                 <div class="invalid-feedback">
                   Please enter a message.
@@ -236,7 +236,7 @@
               </div>
             </div>
             <div class="modal-footer d-flex justify-content-around">
-              <button type="submit" class="btn btn-success" name="submit" value="Send">Submit Email</button>
+              <button type="submit" class="btn btn-success" name="submit" value="Submit">Submit Email</button>
               <button type="reset" class="btn btn-danger" value="Reset">Reset</button>
             </div>
           </form>
@@ -244,6 +244,25 @@
       </div>
     </div>
   </div>
+  <!-- <?php
+    if(isset($POST_['submit'])) {
+      $to = "jerelwilliams94@aol.com";
+      $name = $_POST['name'];
+      $from = $_POST['from-email'];
+      $subject = $_POST['subject'];
+      $message = $_POST['message'];
+      $email_from = "$from";
+      $email_subject = "$subject";
+      $email_body = "Message from " . $name . ". The message is:\n" . $message;
+      $headers = "From: " . $email_from . "\r\n";
+      $retval = mail($to, $email_subject, $email_body, $headers);
+      if ( $retval == true ) {
+        echo "Message sent successfully.";
+      } else {
+        echo "Message could not be sent...";
+      }
+    }
+  ?> -->
   <script src="main.js"></script>
 </body>
 </html>
