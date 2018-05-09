@@ -58,7 +58,7 @@
         <div class="col-xl-5 p-3">
           <div class="skill-section-title text-center">
             <img id="skill-icon" class="skill-section-icon spin-class" src="assets/star.svg" alt="icon here">
-            <h3 id="skill-title" class="skill-section-title">Skills</h3>
+            <h3 id="skill-title" class="skill-section-title pb-4">Skills</h3>
           </div>
           <ul class="list-group">
             <li id="skill-1" class="list-group-item text-white skill-item">React.js</li>
@@ -73,13 +73,13 @@
         </div>
       </div>
       <div class="row p-5 d-flex justify-content-around" id="languages">
-        <div class="col-xl-5 p-3 align-self-center">
+        <div class="p-languages-wrapper col-xl-5 p-3 align-self-center">
           <p id="p-languages" class="text-white text-center">When I started programming, I began by learning Python as my first language to learn the basics of computer programming. However, since I've committed to web developing, I started to learn and use JavaScript much more and plan to one day become an expert at it.</p>
         </div>
         <div class="col-xl-5 p-3">
           <div class="text-center lang-section-title">
             <img id="lang-icon" class="section-icon" src="assets/keyboard.svg" alt="icon here">
-            <h3 id="lang-title" class="section-title">Languages</h3>
+            <h3 id="lang-title" class="section-title pb-4">Languages</h3>
           </div>
           <ul class="list-group">
             <li id="lang-1" class="list-group-item">Primary: JavaScript</li>
@@ -94,26 +94,26 @@
             <h3 id="proj-title" class="section-title pb-4">Projects</h3>
             <p id="p-projects" class="text-white">I've made these projects to simply work on my front-end and back-end web development skills. They are all written in JavaScript and I plan to make many more as I improve my skills. Feel free to visit them.</p>
           </div>
-          <div class="row py-5 d-flex justify-content-around align-items-center">
-            <div>
+          <div class="proj-wrapper row d-flex justify-content-around align-items-center">
+            <div class="proj-pic-wrapper-left">
               <a class="col-xl-5 t-lane-tooltip" href="https://jwillz94.github.io/Tranquility-Lane/#/" target="_blank">
-                <span class="t-lane-tooltip-text">Go ahead, take a look at my creation!</span>
-                <img class="proj-pic proj-pic-left" id="tranquility-lane-pic" src="./assets/tranquility-lane-pic.png" width="500">
+                <span class="t-lane-tooltip-text">Take a look!</span>
+                <img class="proj-pic proj-pic-left" id="tranquility-lane-pic" src="./assets/tranquility-lane-pic.png">
               </a>
             </div>
-            <p class="proj-p col-xl-5 text-center">This is a website I made to showcase the track and field facilities that I've been to over the years of my journey as a track and field athlete. I made this website with React.js as the front-end framework, this website is also responsive to any screen size and contains a clever animation that imitates a sprint start in track and field. The purpose of this website was to show my passion for track and field and to improve my front-end design and React.js skills.</p>
+            <p class="proj-p proj-p-right col-xl-5 text-center">This is a website I made to showcase the track and field facilities that I've been to over the years of my journey as a track and field athlete. I made this website with React.js as the front-end framework, this website is also responsive to any screen size and contains a clever animation that imitates a sprint start in track and field. The purpose of this website was to show my passion for track and field and to improve my front-end design and React.js skills.</p>
           </div>
-          <div class="row py-5 d-flex justify-content-around align-items-center">
-            <p class="proj-p col-xl-5 text-center">A yo-yo showcase site that I made to polish up my skills for the MEAN stack. Combined Angular 5 front-end with a Node server, Express back-end, and MongoDB for my database. Made a REST API that displayed, added, updated, and deleted yo-yos from my Angular interface to my database. Also used Bootstrap, responsiveness, and various animations for the design.</p>
-            <div>
+          <div class="proj-wrapper row d-flex justify-content-around align-items-center">
+            <p class="proj-p proj-p-left col-xl-5 text-center">A yo-yo showcase site that I made to polish up my skills for the MEAN stack. Combined Angular 5 front-end with a Node server, Express back-end, and MongoDB for my database. Made a REST API that displayed, added, updated, and deleted yo-yos from my Angular interface to my database. Also used Bootstrap, responsiveness, and various animations for the design.</p>
+            <div class="proj-pic-wrapper-right">
               <a class="col-xl-5 yoyo-king-tooltip" href="https://yoyokingdom.herokuapp.com/" target="_blank">
                 <span class="yoyo-king-tooltip-text">Check out some yo-yo's!</span>
-                <img class="proj-pic proj-pic-right" id="yoyo-kingdom-pic" src="./assets/yoyo-kingdom-pic.png" height="500">
+                <img class="proj-pic proj-pic-right" id="yoyo-kingdom-pic" src="./assets/yoyo-kingdom-pic.png">
               </a>
             </div>
           </div>
-          <div class="row py-5 d-flex justify-content-around align-items-center">
-            <div>
+          <div class="proj-wrapper row d-flex justify-content-around align-items-center">
+            <div class="proj-pic-wrapper-left">
               <a class="col-xl-5 coming-soon-left-tooltip" href="https://github.com/JWillZ94" target="_blank">
                 <span class="coming-soon-left-tooltip-text">Under Construction!</span>
                 <div class="proj-pic proj-pic-left coming-soon-left d-flex align-items-center justify-content-center">
@@ -121,7 +121,7 @@
                 </div>
               </a>
             </div>
-            <p class="proj-p col-xl-5 text-center">More projects coming soon!</p>
+            <p class="proj-p proj-p-right col-xl-5 text-center">More projects coming soon!</p>
           </div>
           <!-- <div class="row py-5 d-flex justify-content-around align-items-center">
             <div>
@@ -154,7 +154,7 @@
         <div class="col-xl-5 text-center">
           <div class="about-section-title">
             <img id="about-icon" class="section-icon" src="assets/smiley.svg" alt="icon here">
-            <h2 id="about-title" class="py-3 section-title">About Me</h2>
+            <h2 id="about-title" class="section-title pb-4">About Me</h2>
           </div>
           <img class="rounded mb-4" src="assets/graduation.png" alt="pic here" width="150">
           <p id="p-about" class="m-0">Hello! My name is Jerel Williams, I am from Long Island, NY, and I am a web developer. I became interested in coding in April 2017 after my friend, who is a senior software engineer, showed me what it is about after I asked out of curiosity. I decided to try it out and went through a tutorial on Codecademy and instantly fell in love with coding. The fact that I can create almost anything I want and solve problems through coding is what got me hooked. I'd love to help create the next big app that hits the market and to collaborate with a good team in order to meet that goal. I did not go to college for computer science or anything related to technology (I graduated as an undergrad under an Exercise Science major), but I am currently self-teaching the skills that I need to master and I am eager to improve.</p>
@@ -165,28 +165,28 @@
             <h2 id="contact-title" class="py-3 section-title">Contact Me!</h2>
           </div>
           <p class="contact">
-            Email me
-            <img src="assets/arrow-right.svg" alt="icon here" class="px-1">
-            <!-- <span class="contact-link">jerelwilliams94@aol.com</span> -->
-            <img class="contact-link" src="https://png.icons8.com/color/1600/gmail.png" alt="gmail icon" width="80px" id="email" data-toggle="modal" data-target="#emailModal">
+            <span class="contact-text">Email me</span>
+            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-1">
+            <span class="contact-link">jerelwilliams94@aol.com</span>
+            <!-- <img class="contact-link" src="https://png.icons8.com/color/1600/gmail.png" alt="gmail icon" width="80px" id="email" data-toggle="modal" data-target="#emailModal"> -->
           </p>
           <p class="contact">
-            Check out my GitHub
-            <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <span class="contact-text">Check out my GitHub</span>
+            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://github.com/JWillZ94" target="_blank">
               <img class="contact-link" src="assets/github-icon.svg" alt="github icon here" width="80px">
             </a>
           </p>
           <p class="contact">
-            Lets connect on LinkedIn
-            <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <span class="contact-text">Lets connect on LinkedIn</span>
+            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://www.linkedin.com/in/jerel-williams-a84041156/" target="_blank">
               <img class="contact-link" src="assets/linked-in-icon.png" alt="linked-in icon here" width="80px">
             </a>
           </p>
           <p class="contact">
-            Lets be friends on Facebook
-            <img src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <span class="contact-text">Lets be friends on Facebook</span>
+            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
             <a href="https://www.facebook.com/jerel.williams.18" target="_blank">
               <img class="contact-link" src="assets/facebook-icon.ico" alt="facebook icon here" width="80px">
             </a>
@@ -194,7 +194,7 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="emailModal">
+    <!-- <div class="modal fade" id="emailModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -205,10 +205,10 @@
           </div>
           <form id="needs-validation" name="emailform" action="email-form.php" method="post" enctype="text/plain">
             <div class="modal-body">
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <label for="to-email">To: </label>
                 <input type="email" class="form-control" name="to-email" placeholder="jerelwilliams94@aol.com" disabled>
-              </div> -->
+              </div>
               <div class="form-group">
                 <label for="name">Name: </label>
                 <input type="text" class="form-control" name="name" placeholder="Name..." required>
@@ -242,7 +242,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <script src="main.js"></script>
 </body>

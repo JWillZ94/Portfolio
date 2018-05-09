@@ -89,7 +89,7 @@ body {
     transform: scale(1.01);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -171,6 +171,11 @@ body {
   text-decoration: none;
 }
 
+.proj-wrapper {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 .proj-section-title {
   padding-top: 48px;
 }
@@ -196,6 +201,14 @@ body {
 #p-projects {
   line-height: 1.7em;
   font-size: 1.5em;
+}
+
+#tranquility-lane-pic {
+  max-width: 500px;
+}
+
+#yoyo-kingdom-pic {
+  max-height: 500px;
 }
 
 .proj-pic {
@@ -305,8 +318,8 @@ body {
 .t-lane-tooltip .t-lane-tooltip-text::after {
   content: "";
   position: absolute;
-  top: -85%;
-  left: 50%;
+  top: -135%;
+  left: 70%;
   margin-left: -15px;
   border-width: 25px;
   border-style: solid;
@@ -515,4 +528,183 @@ body {
 
 .modal-footer {
   background: #262626;
+}
+
+/* Responsiveness ==================================== */
+
+@media (max-width: 1200px) {
+
+  .proj-p-right {
+    margin-top: 6rem;
+  }
+
+  .proj-p-left {
+    order: 2;
+    margin-top: 6rem;
+  }
+
+  .t-lane-tooltip .t-lane-tooltip-text {
+    left: 80%;
+    bottom: -30%;
+  }
+
+  .t-lane-tooltip .t-lane-tooltip-text::after {
+    left: 20%;
+    bottom: 180%;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text {
+    right: 50%;
+    bottom: -15%;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+    top: -135%;
+    left: 80%;
+    border-width: 25px;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
+    left: 70%;
+    bottom: -30%;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
+    top: -135%;
+    right: 70%;
+    border-width: 25px;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .contact-section-title {
+    margin-top: 2rem;
+  }
+
+  .p-languages-wrapper {
+    order: 2;
+  }
+
+}
+
+@media (max-width: 650px) {
+  #tranquility-lane-pic {
+    max-width: 300px;
+  }
+
+  .t-lane-tooltip .t-lane-tooltip-text {
+    left: 60%;
+  }
+
+  #yoyo-kingdom-pic {
+    max-height: 300px;
+    max-width: 168px;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text {
+    right: 30%;
+    bottom: -15%;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+    top: -125%;
+  }
+
+  .coming-soon-left {
+    width: 300px;
+    height: 168px;
+    font-size: 2em;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
+    left: 50%;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
+    top: -125%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .t-lane-tooltip .t-lane-tooltip-text {
+    left: 30%;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text {
+    right: -10%;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
+    left: 35%;
+  }
+
+  .contact-text {
+    font-size: 0.8em;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+  .contact-link {
+    font-size: 0.8em;
+    width: 60px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .contact-text {
+    font-size: 0.6em;
+  }
+
+  .contact-link {
+    font-size: 0.6em;
+    width: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  #tranquility-lane-pic {
+    max-width: 250px;
+  }
+
+  #yoyo-kingdom-pic {
+    max-height: 250px;
+    max-width: 140px;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text {
+    right: -20%;
+  }
+
+  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+    left: 60%;
+  }
+
+  .coming-soon-left {
+    width: 250px;
+    height: 140px;
+    font-size: 1.5em;
+  }
+
+  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
+    left: 25%;
+  }
+
+  .contact-text {
+    font-size: 0.6em;
+  }
+
+  .arrow {
+    width: 30px;
+  }
+
+  .contact-link {
+    font-size: 0.6em;
+    width: 40px;
+  }
+
 }
