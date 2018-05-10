@@ -62,41 +62,25 @@ $("document").ready(function() {
     }
   );
 
-  $('#skill-title')
-    .on('click', function (event) {
-      $('#p-skills').html('As a full-stack developer, I specialize in front-end web developing, as well as back-end web developing. My web apps are responsive and conform to any screen size, I use bootstrap to help build the design of my web apps, and I also use jQuery mainly for functionality and animations.');
-    })
-    .hover(
-      function () {
-        $('#skill-icon').addClass('spin-class');
-        $('#skill-title').addClass('jump-out');
-        $('#skill-title').removeClass('jump-in');
-      }, function () {
-        $('#skill-icon').removeClass('spin-class');
-        $('#skill-title').removeClass('jump-out');
-        $('#skill-title').addClass('jump-in');
-      }
-    );
+  $('#skill-icon').hover(
+    function () {
+      $(this).addClass('spin-class');
+      $(this).removeClass('stop-spin-class');
+    }, function () {
+      $(this).removeClass('spin-class');
+      $(this).addClass('stop-spin-class');
+    }
+  );
 
-  // $('#skill-1').on('click', function (event) {
-  //   $('#p-skills').html('I use React.js for fast, powerful single-page applications.');
-  // });
-  //
-  // $('#skill-2').on('click', function (event) {
-  //   $('#p-skills').html('yeah haha 2');
-  // });
-  //
-  // $('#skill-3').on('click', function (event) {
-  //   $('#p-skills').html('yeah haha 3');
-  // });
-  //
-  // $('#skill-4').on('click', function (event) {
-  //   $('#p-skills').html('yeah haha 4');
-  // });
-  //
-  // $('#skill-5').on('click', function (event) {
-  //   $('#p-skills').html('yeah haha 5');
-  // });
+  $('#skill-title').hover(
+    function () {
+      $(this).addClass('jump-out');
+      $(this).removeClass('jump-in');
+    }, function () {
+      $(this).removeClass('jump-out');
+      $(this).addClass('jump-in');
+    }
+  );
 
   $('.lang-section-title').hover(
     function () {
@@ -148,21 +132,21 @@ $("document").ready(function() {
 
   $('.proj-pic-left').hover(
     function() {
-      $('.proj-pic-left').addClass('left-lower');
-      $('.proj-pic-left').removeClass('left-raise');
+      $(this).addClass('left-lower');
+      $(this).removeClass('left-raise');
     }, function() {
-      $('.proj-pic-left').removeClass('left-lower');
-      $('.proj-pic-left').addClass('left-raise');
+      $(this).removeClass('left-lower');
+      $(this).addClass('left-raise');
     }
   );
 
   $('.proj-pic-right').hover(
     function() {
-      $('.proj-pic-right').addClass('right-lower');
-      $('.proj-pic-right').removeClass('right-raise');
+      $(this).addClass('right-lower');
+      $(this).removeClass('right-raise');
     }, function() {
-      $('.proj-pic-right').removeClass('right-lower');
-      $('.proj-pic-right').addClass('right-raise');
+      $(this).removeClass('right-lower');
+      $(this).addClass('right-raise');
     }
   );
 

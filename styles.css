@@ -66,21 +66,9 @@ body {
 
 /* Skills ==================================== */
 
-/* .skill-section-icon {
-  cursor: pointer;
-}
-
-.skill-section-title {
-  cursor: pointer;
-}
-
-.skill-item {
-  cursor: pointer;
-} */
-
 .list-group-item:hover {
   animation-name: hover-scale;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 
@@ -117,10 +105,24 @@ body {
   }
 }
 
+@keyframes stop-spin {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .spin-class {
   animation-name: spin;
   animation-timing-function: linear;
   animation-duration: 100s;
+}
+
+.stop-spin-class {
+  animation-name: stop-spin;
+  animation-duration: 0.5s;
 }
 
 /* Languages ==================================== */
@@ -473,9 +475,18 @@ body {
 }
 
 .contact-link:hover {
-  animation-name: hover-scale;
+  animation-name: contact-hover-scale;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
+}
+
+@keyframes contact-hover-scale {
+  from {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(1.15);
+  }
 }
 
 /* Animations ==================================== */
