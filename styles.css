@@ -174,8 +174,8 @@ body {
 }
 
 .proj-wrapper {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3rem 0 3rem 0;
+  margin: 0 0 3rem 0;
 }
 
 .proj-section-title {
@@ -205,15 +205,9 @@ body {
   font-size: 1.5em;
 }
 
-#tranquility-lane-pic {
-  max-width: 500px;
-}
-
-#yoyo-kingdom-pic {
-  max-height: 500px;
-}
-
 .proj-pic {
+  max-width: 500px;
+  height: 300px;
   margin: auto;
   border-radius: 15px;
 }
@@ -294,51 +288,12 @@ body {
   }
 }
 
-.t-lane-tooltip {
+.right-tooltip {
   position: relative;
   display: inline-block;
 }
 
-.t-lane-tooltip .t-lane-tooltip-text {
-  visibility: hidden;
-  width: 200px;
-  background-color: #262626;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  border: 10px solid #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: 1;
-  bottom: -55%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.t-lane-tooltip .t-lane-tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: -135%;
-  left: 70%;
-  margin-left: -15px;
-  border-width: 25px;
-  border-style: solid;
-  border-color: transparent #fff #fff transparent;
-}
-
-.t-lane-tooltip:hover .t-lane-tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-.yoyo-king-tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.yoyo-king-tooltip .yoyo-king-tooltip-text {
+.right-tooltip .right-tooltip-text {
   visibility: hidden;
   width: 250px;
   background-color: #262626;
@@ -349,14 +304,53 @@ body {
   border-radius: 20px;
   position: absolute;
   z-index: 1;
-  bottom: 2%;
-  right: 160%;
+  bottom: -20%;
+  left: 290%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-.yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+.right-tooltip .right-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  right: 100%;
+  margin-left: -15px;
+  border-width: 25px;
+  border-style: solid;
+  border-color: #fff #fff transparent transparent;
+}
+
+.right-tooltip:hover .right-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.left-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.left-tooltip .left-tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #262626;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 10px solid #fff;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: -20%;
+  right: 120%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.left-tooltip .left-tooltip-text::after {
   content: "";
   position: absolute;
   top: 2%;
@@ -367,55 +361,16 @@ body {
   border-color: #fff transparent transparent #fff;
 }
 
-.yoyo-king-tooltip:hover .yoyo-king-tooltip-text {
+.left-tooltip:hover .left-tooltip-text {
   visibility: visible;
   opacity: 1;
 }
 
-.coming-soon-left {
+.coming-soon {
   width: 500px;
   height: 300px;
   background-color: black;
   font-size: 4em;
-}
-
-.coming-soon-left-tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.coming-soon-left-tooltip .coming-soon-left-tooltip-text {
-  visibility: hidden;
-  width: 250px;
-  background-color: #262626;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  border: 10px solid #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: 1;
-  bottom: 0%;
-  left: 320%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 2%;
-  right: 103%;
-  margin-left: -15px;
-  border-width: 20px;
-  border-style: solid;
-  border-color: #fff #fff transparent transparent;
-}
-
-.coming-soon-left-tooltip:hover .coming-soon-left-tooltip-text {
-  visibility: visible;
-  opacity: 1;
 }
 
 /* Contributions ==================================== */
@@ -554,37 +509,25 @@ body {
     margin-top: 6rem;
   }
 
-  .t-lane-tooltip .t-lane-tooltip-text {
-    left: 80%;
+  .right-tooltip .right-tooltip-text {
+    left: 60%;
     bottom: -30%;
   }
 
-  .t-lane-tooltip .t-lane-tooltip-text::after {
+  .right-tooltip .right-tooltip-text::after {
     left: 20%;
-    bottom: 180%;
-    border-color: transparent transparent #fff transparent;
-  }
-
-  .yoyo-king-tooltip .yoyo-king-tooltip-text {
-    right: 50%;
-    bottom: -15%;
-  }
-
-  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
     top: -135%;
-    left: 80%;
-    border-width: 25px;
     border-color: transparent transparent #fff transparent;
   }
 
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
-    left: 70%;
+  .left-tooltip .left-tooltip-text {
+    right: 50%;
     bottom: -30%;
   }
 
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
+  .left-tooltip .left-tooltip-text::after {
+    left: 80%;
     top: -135%;
-    right: 70%;
     border-width: 25px;
     border-color: transparent transparent #fff transparent;
   }
@@ -600,55 +543,39 @@ body {
 }
 
 @media (max-width: 650px) {
-  #tranquility-lane-pic {
+  .proj-pic {
     max-width: 300px;
+    max-height: 168px;
   }
 
-  .t-lane-tooltip .t-lane-tooltip-text {
+  .right-tooltip .right-tooltip-text {
     left: 60%;
   }
 
-  #yoyo-kingdom-pic {
-    max-height: 300px;
-    max-width: 168px;
+  .left-tooltip .left-tooltip-text {
+    right: 40%;
+    bottom: -45%;
   }
 
-  .yoyo-king-tooltip .yoyo-king-tooltip-text {
-    right: 30%;
-    bottom: -15%;
-  }
-
-  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+  .left-tooltip .left-tooltip-text::after {
     top: -125%;
   }
 
-  .coming-soon-left {
+  .coming-soon {
     width: 300px;
     height: 168px;
     font-size: 2em;
   }
 
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
-    left: 50%;
-  }
-
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text::after {
-    top: -125%;
-  }
-
 }
 
 @media (max-width: 500px) {
-  .t-lane-tooltip .t-lane-tooltip-text {
+  .right-tooltip .right-tooltip-text {
     left: 30%;
   }
 
-  .yoyo-king-tooltip .yoyo-king-tooltip-text {
-    right: -10%;
-  }
-
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
-    left: 35%;
+  .left-tooltip .left-tooltip-text {
+    right: 20%;
   }
 
   .contact-text {
@@ -678,31 +605,22 @@ body {
 }
 
 @media (max-width: 350px) {
-  #tranquility-lane-pic {
+  .proj-pic {
     max-width: 250px;
   }
 
-  #yoyo-kingdom-pic {
-    max-height: 250px;
-    max-width: 140px;
+  .left-tooltip .left-tooltip-text {
+    right: 0%;
   }
 
-  .yoyo-king-tooltip .yoyo-king-tooltip-text {
-    right: -20%;
-  }
-
-  .yoyo-king-tooltip .yoyo-king-tooltip-text::after {
+  .left-tooltip .left-tooltip-text::after {
     left: 60%;
   }
 
-  .coming-soon-left {
+  .coming-soon {
     width: 250px;
     height: 140px;
     font-size: 1.5em;
-  }
-
-  .coming-soon-left-tooltip .coming-soon-left-tooltip-text {
-    left: 25%;
   }
 
   .contact-text {
