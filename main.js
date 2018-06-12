@@ -130,6 +130,18 @@ $("document").ready(function() {
     }
   );
 
+  $('.cont-section-title').hover(
+    function () {
+      $('#cont-icon').addClass('shake-class');
+      $('#cont-title').addClass('jump-out');
+      $('#cont-title').removeClass('jump-in');
+    }, function () {
+      $('#cont-icon').removeClass('shake-class');
+      $('#cont-title').removeClass('jump-out');
+      $('#cont-title').addClass('jump-in');
+    }
+  );
+
   $('.proj-pic-left').hover(
     function() {
       $(this).addClass('left-lower');
