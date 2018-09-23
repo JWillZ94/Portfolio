@@ -5,11 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jerel Williams</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous" defer></script>
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  </noscript>
+  <style>
+    body {
+      background: linear-gradient(to right, #fff, #bfbfbf);
+      position: relative;
+    }
+
+    .nav-item {
+      padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .nav-link {
+      text-align: center;
+      background: #fff;
+    }
+
+    .active {
+      text-decoration: underline;
+    }
+
+    #title {
+      background: linear-gradient(to right, #b30000, #bfbfbf);
+      margin-top: 10rem !important;
+    }
+
+    .home-text-title {
+      color: #fff;
+      text-shadow: 2px 2px #262626;
+    }
+
+    .home-text {
+      color: #fff;
+      text-shadow: 2px 2px #262626;
+      margin-bottom: 1.2rem;
+    }
+
+    #skills {
+      background: linear-gradient(to top, #fff, #bfbfbf);
+      color: #262626;
+    }
+
+    #skills li {
+      background: linear-gradient(to top right, #262626, #404040);
+    }
+
+    #p-skills {
+      line-height: 1.7em;
+      font-size: 1.5em;
+      color: #595959;
+    }
+
+  </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="30">
   <div class="container-fluid">
@@ -82,7 +137,7 @@
         </div>
         <div class="col-xl-5 p-3">
           <div class="text-center lang-section-title">
-            <img id="lang-icon" class="section-icon" src="assets/keyboard.svg" alt="icon here">
+            <img id="lang-icon" class="lazy section-icon" src="" data-src="assets/keyboard.svg" alt="icon here">
             <h3 id="lang-title" class="section-title pb-4">Languages</h3>
           </div>
           <ul class="list-group">
@@ -94,24 +149,24 @@
       <div class="row p-5 d-flex justify-content-around" id="projects">
         <div class="p-3">
           <div class="text-center proj-section-title">
-            <img id="proj-icon" class="section-icon" src="assets/globe.svg" alt="icon here">
+            <img id="proj-icon" class="lazy section-icon" src="" data-src="assets/globe.svg" alt="icon here">
             <h3 id="proj-title" class="section-title pb-4">Projects</h3>
             <p id="p-projects" class="text-white">I've made these projects to simply work on my front-end and back-end web development skills. They are all written in JavaScript and I plan to make many more as I improve my skills. Feel free to visit them.</p>
           </div>
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <p class="proj-p proj-p-left col-xl-5 text-center">This app is called Kool-Keyboards, a React.js-powered ecommerce website that shows keyboards to sell. The UI features components made from React.js, I used the Redux library for state management, Node and Express for the backend, Express-sessions and Passport.js for user authentication, and React-Slider for the sliding animation in the home page. This is a fully functioning MERN Stack app!</p>
             <div class="proj-pic-wrapper-right">
-              <a class="col-xl-5 left-tooltip" href="https://kool-keyboards.herokuapp.com/#/" target="_blank">
+              <a class="col-xl-5 left-tooltip" href="https://kool-keyboards.herokuapp.com/#/" target="_blank" rel="noreferrer">
                 <span class="left-tooltip-text">Check out these deals!</span>
-                <img class="proj-pic proj-pic-right" src="./assets/kool-keyboards-pic.png">
+                <img class="lazy proj-pic proj-pic-right" src="" data-src="./assets/kool-keyboards-pic.png" alt="kool-keyboards-pic">
               </a>
             </div>
           </div>
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <div class="proj-pic-wrapper-left">
-              <a class="col-xl-5 right-tooltip" href="https://jwillz94.github.io/JS-Tic-Tac-Toe/" target="_blank">
+              <a class="col-xl-5 right-tooltip" href="https://jwillz94.github.io/JS-Tic-Tac-Toe/" target="_blank" rel="noreferrer">
                 <span class="right-tooltip-text">Have some fun!</span>
-                <img class="proj-pic proj-pic-left" src="./assets/js-tic-tac-toe.png">
+                <img class="lazy proj-pic proj-pic-left" src="" data-src="./assets/js-tic-tac-toe.png" alt="js-tic-tac-toe-pic">
               </a>
             </div>
             <p class="proj-p proj-p-right col-xl-5 text-center">This is a tic-tac-toe game I made with JavaScript. I made this game in order to work on my vanilla JavaScript, design, and game logic skills.</p>
@@ -119,17 +174,17 @@
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <p class="proj-p proj-p-left col-xl-5 text-center">A yo-yo showcase site that I made to polish up my skills for the MEAN stack. Combined Angular 5 front-end with a Node server, Express back-end, and MongoDB for my database. Made a REST API that displayed, added, updated, and deleted yo-yos from my Angular interface to my database. Also used Bootstrap, responsiveness, and various animations for the design.</p>
             <div class="proj-pic-wrapper-right">
-              <a class="col-xl-5 left-tooltip" href="https://yoyokingdom.herokuapp.com/" target="_blank">
+              <a class="col-xl-5 left-tooltip" href="https://yoyokingdom.herokuapp.com/" target="_blank" rel="noreferrer">
                 <span class="left-tooltip-text">Check out some yo-yo's!</span>
-                <img class="proj-pic proj-pic-right" src="./assets/yoyo-kingdom-pic.png">
+                <img class="lazy proj-pic proj-pic-right" src="" data-src="./assets/yoyo-kingdom-pic.png" alt="yoyo-kingdom-pic">
               </a>
             </div>
           </div>
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <div class="proj-pic-wrapper-left">
-              <a class="col-xl-5 right-tooltip" href="https://jwillz94.github.io/Tranquility-Lane/#/indoor" target="_blank">
+              <a class="col-xl-5 right-tooltip" href="https://jwillz94.github.io/Tranquility-Lane/#/indoor" target="_blank" rel="noreferrer">
                 <span class="right-tooltip-text">Take a look!</span>
-                <img class="proj-pic proj-pic-left" src="./assets/tranquility-lane-pic.png">
+                <img class="lazy proj-pic proj-pic-left" src="" data-src="./assets/tranquility-lane-pic.png" alt="tranquility-lane-pic">
               </a>
             </div>
             <p class="proj-p proj-p-right col-xl-5 text-center">This is a website I made to showcase the track and field facilities that I've been to over the years of my journey as a track and field athlete. I made this website with React.js as the front-end framework, this website is also responsive to any screen size and contains a clever animation that imitates a sprint start in track and field. The purpose of this website was to show my passion for track and field and to improve my front-end design and React.js skills.</p>
@@ -148,7 +203,7 @@
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <p class="proj-p proj-p-left col-xl-5 text-center">More projects coming soon!</p>
             <div class="proj-pic-wrapper-right">
-              <a class="col-xl-5 left-tooltip" href="https://github.com/JWillZ94" target="_blank">
+              <a class="col-xl-5 left-tooltip" href="https://github.com/JWillZ94" target="_blank" rel="noreferrer">
                 <span class="left-tooltip-text">Under Construction!</span>
                 <div class="proj-pic proj-pic-right coming-soon d-flex align-items-center justify-content-center">
                   <span>Coming Soon!</span>
@@ -161,15 +216,15 @@
       <div class="row p-5 d-flex justify-content-around" id="contributions">
         <div class="p-3">
           <div class="text-center cont-section-title">
-            <img id="cont-icon" class="section-icon" src="assets/circuit-board.svg" alt="icon here">
+            <img id="cont-icon" class="lazy section-icon" src="" data-src="assets/circuit-board.svg" alt="icon here">
             <h3 id="cont-title" class="section-title pb-4">Contributions</h3>
             <p id="p-contributions">I love helping people complete their dream projects as much as I love creating my own. These are projects that I have not started but projects that I am helping others complete.</p>
           </div>
           <div class="proj-wrapper row d-flex justify-content-around align-items-center">
             <div class="proj-pic-wrapper-left">
-              <a class="col-xl-5 cont-tooltip right-tooltip" href="https://nycondiamond.com" target="_blank">
+              <a class="col-xl-5 cont-tooltip right-tooltip" href="https://nycondiamond.com" target="_blank" rel="noreferrer">
                 <span class="right-tooltip-text">Check it out!</span>
-                <img class="proj-pic proj-pic-left" src="./assets/nycon-pic.png">
+                <img class="lazy proj-pic proj-pic-left" src="" data-src="./assets/nycon-pic.png" alt="nycon-pic">
               </a>
             </div>
             <p class="proj-p proj-p-right col-xl-5 text-center">This is the website of a diamond cutting tool business called NYCON Diamond and Tool. I am currently contributing to their website using WordPress and CSS.</p>
@@ -179,42 +234,42 @@
       <div class="row d-flex justify-content-around py-5" id="contact">
         <div class="col-xl-5 text-center">
           <div class="about-section-title">
-            <img id="about-icon" class="section-icon" src="assets/smiley.svg" alt="icon here">
+            <img id="about-icon" class="lazy section-icon" src="" data-src="assets/smiley.svg" alt="icon here">
             <h2 id="about-title" class="section-title pb-4">About Me</h2>
           </div>
-          <img class="rounded mb-4" src="assets/graduation.png" alt="pic here" width="150">
+          <img class="lazy rounded mb-4" src="" data-src="assets/graduation.png" alt="pic here" width="150">
           <p id="p-about" class="m-0">Hello! My name is Jerel Williams, I am from Long Island, NY, and I am a web developer. I became interested in coding in April 2017 after my friend, who is a senior software engineer, showed me what it is about after I asked out of curiosity. I decided to try it out and went through a tutorial on Codecademy and instantly fell in love with coding. The fact that I can create almost anything I want and solve problems through coding is what got me hooked. I'd love to help create the next big app that hits the market and to collaborate with a good team in order to meet that goal. I did not go to college for computer science or anything related to technology (I graduated as an undergrad under an Exercise Science major), but I am currently self-teaching the skills that I need to master and I am eager to improve.</p>
         </div>
         <div class="col-xl-5 text-center">
           <div class="contact-section-title">
-            <img id="contact-icon" class="section-icon" src="assets/comment-discussion.svg" alt="icon here">
+            <img id="contact-icon" class="lazy section-icon" src="" data-src="assets/comment-discussion.svg" alt="icon here">
             <h2 id="contact-title" class="py-3 section-title">Contact Me!</h2>
           </div>
           <p class="contact">
             <span class="contact-text">Email me</span>
-            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-1">
+            <img class="lazy arrow" src="" data-src="assets/arrow-right.svg" alt="icon here" class="px-1">
             <span class="contact-link">jerelwilliams94@aol.com</span>
             <!-- <img class="contact-link" src="https://png.icons8.com/color/1600/gmail.png" alt="gmail icon" width="80px" id="email" data-toggle="modal" data-target="#emailModal"> -->
           </p>
           <p class="contact">
             <span class="contact-text">Check out my GitHub</span>
-            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
-            <a href="https://github.com/JWillZ94" target="_blank">
-              <img class="contact-link" src="assets/github-icon.svg" alt="github icon here" width="80px">
+            <img class="lazy arrow" src="" data-src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <a href="https://github.com/JWillZ94" target="_blank" rel="noreferrer">
+              <img class="lazy contact-link" src="" data-src="assets/github-icon.svg" alt="github icon here" width="80px">
             </a>
           </p>
           <p class="contact">
             <span class="contact-text">Lets connect on LinkedIn</span>
-            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
-            <a href="https://www.linkedin.com/in/jerel-williams/" target="_blank">
-              <img class="contact-link" src="assets/linked-in-icon.png" alt="linked-in icon here" width="80px">
+            <img class="lazy arrow" src="" data-src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <a href="https://www.linkedin.com/in/jerel-williams/" target="_blank" rel="noreferrer">
+              <img class="lazy contact-link" src="" data-src="assets/linked-in-icon.png" alt="linked-in icon here" width="80px">
             </a>
           </p>
           <p class="contact">
             <span class="contact-text">Lets be friends on Facebook</span>
-            <img class="arrow" src="assets/arrow-right.svg" alt="icon here" class="px-2">
-            <a href="https://www.facebook.com/jerel.williams.18" target="_blank">
-              <img class="contact-link" src="assets/facebook-icon.ico" alt="facebook icon here" width="80px">
+            <img class="lazy arrow" src="" data-src="assets/arrow-right.svg" alt="icon here" class="px-2">
+            <a href="https://www.facebook.com/jerel.williams.18" target="_blank" rel="noreferrer">
+              <img class="lazy contact-link" src="" data-src="assets/facebook-icon.ico" alt="facebook icon here" width="80px">
             </a>
           </p>
         </div>
@@ -270,7 +325,7 @@
       </div>
     </div> -->
   </div>
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
 

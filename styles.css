@@ -1,18 +1,4 @@
-body {
-  background: linear-gradient(to right, #fff, #bfbfbf);
-  position: relative;
-}
-
 /* Navbar ==================================== */
-
-.nav-item {
-  padding: 1rem 2rem 1rem 2rem;
-}
-
-.nav-link {
-  text-align: center;
-  background: #fff;
-}
 
 @keyframes nav-enter {
   from {
@@ -46,27 +32,9 @@ body {
   animation-fill-mode: forwards;
 }
 
-.active {
-  text-decoration: underline;
-}
-
 /* Title ==================================== */
 
-#title {
-  background: linear-gradient(to right, #b30000, #bfbfbf);
-  margin-top: 10rem !important;
-}
 
-.home-text-title {
-  color: #fff;
-  text-shadow: 2px 2px #262626;
-}
-
-.home-text {
-  color: #fff;
-  text-shadow: 2px 2px #262626;
-  margin-bottom: 1.2rem;
-}
 
 /* Skills ==================================== */
 
@@ -85,20 +53,7 @@ body {
   }
 }
 
-#skills {
-  background: linear-gradient(to top, #fff, #bfbfbf);
-  color: #262626;
-}
 
-#skills li {
-  background: linear-gradient(to top right, #262626, #404040);
-}
-
-#p-skills {
-  line-height: 1.7em;
-  font-size: 1.5em;
-  color: #595959;
-}
 
 @keyframes spin {
   from {
